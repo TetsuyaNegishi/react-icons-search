@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import './App.css';
 import * as Icons from "react-icons/all";
-import TextField from '@material-ui/core/TextField';
+import { Input, Icon } from 'antd';
 
 const App: React.FC = () => {
   const [value, setValue] = useState('');
@@ -19,14 +19,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <TextField
-        id="standard-search"
-        label="Search field"
-        type="search"
-        fullWidth
-        onChange={handleOnChangeInput}
-        margin="normal"
-      />
+      <Input type="search" prefix={<Icon type="search" />} size="large" onChange={handleOnChangeInput} />
       <div>
         {data.map(([name, Icon]) => <div key={name}><Icon />{name}</div>)}
       </div>
