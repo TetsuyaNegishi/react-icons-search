@@ -1,7 +1,16 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import './App.css';
 import * as Icons from "react-icons/all";
-import { Input, Icon } from 'antd';
+import { Input, Icon, Card } from 'antd';
+
+const iconsList = Object.entries(Icons);
+
+const gridStyle: React.CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, 150px)',
+  gap: '20px',
+  justifyContent: 'center',
+}
 
 const App: React.FC = () => {
   const [value, setValue] = useState('');
@@ -14,14 +23,18 @@ const App: React.FC = () => {
     if(!value) {
       return []
     }
-    return Object.entries(Icons).filter(([name]) => name.toLowerCase().search(value.toLowerCase()) !== -1)
+    return iconsList.filter(([name]) => name.toLowerCase().search(value.toLowerCase()) !== -1)
   }, [value])
 
   return (
     <div className="App">
       <Input type="search" prefix={<Icon type="search" />} size="large" onChange={handleOnChangeInput} />
-      <div>
-        {data.map(([name, Icon]) => <div key={name}><Icon />{name}</div>)}
+      <div style={gridStyle}>
+        {data.map(([name, Icon]) => (
+          <Card key={name} hoverable size="small" cover={<div style={{paddingTop: '10px'}}><Icon size={50} /></div>}>
+            <Card.Meta title={name} />
+          </Card>
+        ))}
       </div>
     </div>
   );
