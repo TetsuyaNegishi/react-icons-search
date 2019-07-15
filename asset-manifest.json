@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.19393e92.chunk.css",
-    "main.js": "/static/js/main.c2f16486.chunk.js",
-    "main.js.map": "/static/js/main.c2f16486.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.9b5089ec.chunk.css": "/static/css/2.9b5089ec.chunk.css",
-    "static/js/2.a70c4d76.chunk.js": "/static/js/2.a70c4d76.chunk.js",
-    "static/js/2.a70c4d76.chunk.js.map": "/static/js/2.a70c4d76.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.eb8810622ad72bbf82cfd2a566b6bee7.js": "/precache-manifest.eb8810622ad72bbf82cfd2a566b6bee7.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.9b5089ec.chunk.css.map": "/static/css/2.9b5089ec.chunk.css.map",
-    "static/css/main.19393e92.chunk.css.map": "/static/css/main.19393e92.chunk.css.map"
+    "main.css": "/react-icons-search/static/css/main.19393e92.chunk.css",
+    "main.js": "/react-icons-search/static/js/main.ecc194b1.chunk.js",
+    "main.js.map": "/react-icons-search/static/js/main.ecc194b1.chunk.js.map",
+    "runtime~main.js": "/react-icons-search/static/js/runtime~main.ba53c467.js",
+    "runtime~main.js.map": "/react-icons-search/static/js/runtime~main.ba53c467.js.map",
+    "static/css/2.9b5089ec.chunk.css": "/react-icons-search/static/css/2.9b5089ec.chunk.css",
+    "static/js/2.846f6a38.chunk.js": "/react-icons-search/static/js/2.846f6a38.chunk.js",
+    "static/js/2.846f6a38.chunk.js.map": "/react-icons-search/static/js/2.846f6a38.chunk.js.map",
+    "index.html": "/react-icons-search/index.html",
+    "precache-manifest.d61e541d6984abaae073569c6dc144b5.js": "/react-icons-search/precache-manifest.d61e541d6984abaae073569c6dc144b5.js",
+    "service-worker.js": "/react-icons-search/service-worker.js",
+    "static/css/2.9b5089ec.chunk.css.map": "/react-icons-search/static/css/2.9b5089ec.chunk.css.map",
+    "static/css/main.19393e92.chunk.css.map": "/react-icons-search/static/css/main.19393e92.chunk.css.map"
   }
 }
