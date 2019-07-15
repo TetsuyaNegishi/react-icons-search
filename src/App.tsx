@@ -32,7 +32,7 @@ const App: React.FC = () => {
 
   return (
     <Layout style={{minHeight: '100vh'}}>
-      <Header><h1 style={{color: 'white'}}>react-icons-search-site</h1></Header>
+      <Header><h1 style={{color: 'white'}}>react-icons-search</h1></Header>
       <Content style={{padding: '20px 50px'}}>
         <Input type="search" prefix={<Icon type="search" />} size="large" onChange={handleOnChangeInput} />
         <div style={iconBoxStyle}>
