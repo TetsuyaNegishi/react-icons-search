@@ -2,8 +2,11 @@
   "name": "react-icons-search",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://tetsuyanegishi.github.io/react-icons-search",
+  "homepage": "https://tetsuyanegishi.github.io/react-icons-search",
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.14",
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
     "@types/jest": "24.0.15",
     "@types/node": "12.6.2",
     "@types/react": "16.8.23",
