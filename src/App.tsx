@@ -1,4 +1,5 @@
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import React, { useState, useCallback, useMemo } from 'react';
 import './App.css';
 import * as Icons from "react-icons/all";
@@ -17,6 +18,23 @@ const iconBoxCss = css`
   padding: 10px 0;
 `;
 
+const Root = styled(Layout)`
+  min-height: 100vh;
+`;
+
+const mainCss = css`
+  max-width: 835px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 50px;
+`
+
+const Title = styled.h1`
+  display: inline;
+  color: white;
+  margin: 0;
+`
+
 const App: React.FC = () => {
   const [value, setValue] = useState('');
 
@@ -32,9 +50,9 @@ const App: React.FC = () => {
   }, [value])
 
   return (
-    <Layout style={{minHeight: '100vh'}}>
-      <Header><h1 style={{color: 'white'}}>react-icons-search</h1></Header>
-      <Content style={{padding: '20px 50px'}}>
+    <Root>
+      <Header><Title>react-icons-search</Title></Header>
+      <Content css={mainCss}>
         <Input type="search" prefix={<Icon type="search" />} size="large" onChange={handleOnChangeInput} />
         <div css={iconBoxCss}>
           {data.map(([name, Icon]) => (
@@ -44,7 +62,7 @@ const App: React.FC = () => {
           ))}
         </div>
       </Content>
-    </Layout>
+    </Root>
   );
 }
 
