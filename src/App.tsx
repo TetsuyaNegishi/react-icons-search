@@ -28,7 +28,7 @@ const App: React.FC = () => {
     if(!value) {
       return []
     }
-    return iconsList.filter(([name]) => name.toLowerCase().search(value.toLowerCase()) !== -1)
+    return iconsList.filter(([name]) => name.toLowerCase().search(value.toLowerCase()) !== -1).slice(0, 30)
   }, [value])
 
   return (
