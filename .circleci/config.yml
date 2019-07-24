@@ -11,8 +11,8 @@ jobs:
           - v1-dependencies-{{ checksum "yarn.lock" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-      - run: git config user.email "tetsuya.negishi.tsukuba@gmail.com"
-      - run: git config user.name "Tetsuya Negishi"
+      - run: git config user.email "<>"
+      - run: git config user.name "Circle CI"
       - run: yarn install
       - save_cache:
           paths:
